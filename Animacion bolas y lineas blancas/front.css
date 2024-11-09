@@ -1,0 +1,98 @@
+/* Reseteo y normalización de los estilos en todos los elementos */
+* {
+    box-sizing: border-box; /* Usar border-box para incluir padding y borde en el ancho y alto */
+}
+
+/* Establece las dimensiones y el fondo de la página */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Eliminar márgenes predeterminados */
+    font-family: 'Open Sans', sans-serif; /* Fuente base */
+    background: radial-gradient(ellipse at bottom, rgba(104,128,138,0.4) 10%, rgba(138,114,76,0) 40%),
+                linear-gradient(to bottom, rgba(57,173,219,0.25) 0%, rgba(42,60,87,0.4) 100%),
+                linear-gradient(135deg, #670d10 0%, #092756 100%); /* Fondo con tres gradientes */
+    overflow: hidden; /* Evitar scroll */
+}
+
+/* Estilos generales para los botones */
+.btn {
+    display: inline-block; /* Hace que el botón sea un bloque en línea */
+    padding: 4px 10px; /* Relleno interno */
+    margin-bottom: 0; /* Sin margen inferior */
+    font-size: 13px; /* Tamaño de texto */
+    line-height: 18px; /* Altura de línea */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alinear texto al centro */
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); /* Sombra suave en el texto */
+    background-color: #f5f5f5; /* Color de fondo */
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); /* Gradiente de fondo */
+    border: 1px solid #e6e6e6; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.1s linear; /* Transición suave para el color de fondo */
+}
+
+/* Efecto hover para el botón */
+.btn:hover {
+    background-color: #e6e6e6; /* Fondo más oscuro al pasar el cursor */
+}
+
+/* Estilos para el botón principal */
+.btn-primary {
+    color: #fff; /* Texto blanco */
+    background-color: #4a77d4; /* Fondo azul */
+    background-image: linear-gradient(to bottom, #6eb6de, #4a77d4); /* Gradiente de fondo */
+    border-color: #3762bc; /* Borde azul oscuro */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); /* Sombra en el texto */
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+}
+
+/* Efecto hover para el botón principal */
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #4a77d4; /* Mantener fondo azul al pasar el cursor */
+}
+
+/* Estilos para el botón que ocupa todo el ancho */
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+/* Estilo para botones grandes */
+.btn-large {
+    padding: 9px 14px; /* Relleno más grande */
+    font-size: 15px; /* Texto más grande */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos del contenedor de login */
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenedor */
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+/* Estilos para el título del login */
+.login h1 {
+    color: #fff; /* Color blanco */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Estilo para los inputs */
+input {
+    width: 100%;
+    margin-bottom: 10px; /* Espacio inferior */
+    padding: 10px; /* Relleno */
+    font-size: 13px; /* Tamaño de texto */
+    color: #fff; /* Texto blanco */
+    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro semi-transparente */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Borde oscuro */
+    border-radius: 4px; /* Bordes redondeados */
+}
